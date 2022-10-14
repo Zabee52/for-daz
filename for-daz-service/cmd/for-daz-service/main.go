@@ -24,7 +24,6 @@ func main() {
 	log.Printf("server listening at %v", lis.Addr())
 	if err := s.Serve(lis); err != nil {
 		log.Fatalf("failed to serve: %v", err)
-		// conflict area!!
-		// 작업 ..
+		// 여기가 conflict area
 	}
 }
