@@ -24,5 +24,6 @@ func main() {
 	log.Printf("server listening at %v", lis.Addr())
 	if err := s.Serve(lis); err != nil {
 		log.Fatalf("failed to serve: %v", err)
+		// 이렇게 쓰면 문제가 발생하는거죠.
 	}
 }
